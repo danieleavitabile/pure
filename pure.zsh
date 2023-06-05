@@ -10,7 +10,8 @@
 # prompt:
 # %F => color dict
 # %f => reset color
-# %~ => current path. Here I only want to display the latest 2 folders
+# %~ => current path. Here I only want to display the latest 2 folders,
+#       with possibly dots, hence I have changed this to %(3~|.../%2~|%~)'
 # %* => time
 # %n => username
 # %m => shortname host
