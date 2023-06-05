@@ -1,5 +1,15 @@
 # Pure
 
+This is my fork of the Pure ZSH prompt, whose README file has been left untouched
+below. The only change I have made (2 lines of code) is to ensure that long paths get
+shortened. Namely, if a path (relative to home) is longer than 2 levels, then the
+prompt only shows the last 2 folders, preceeded by dots. So when navigating to
+~/Dir1/Dir2/Dir3/Dir4 then the prompt shows
+```
+.../Dir3/Dir4
+```
+
+
 > Pretty, minimal and fast ZSH prompt
 
 <img src="screenshot.png" width="864">
