@@ -10,7 +10,7 @@
 # prompt:
 # %F => color dict
 # %f => reset color
-# %~ => current path
+# %~ => current path. Here I only want to display the latest 2 folders
 # %* => time
 # %n => username
 # %m => shortname host
@@ -141,7 +141,7 @@ prompt_pure_preprompt_render() {
 
 	# Set the path.
 	# preprompt_parts+=('%F{${prompt_pure_colors[path]}}%~%f')
-	preprompt_parts+=('%F{${prompt_pure_colors[path]}}%2~%f')
+	preprompt_parts+=('%F{${prompt_pure_colors[path]}}%(3~|.../%2~|%~)%f')
 
 	# Git branch and dirty status info.
 	typeset -gA prompt_pure_vcs_info
@@ -207,7 +207,7 @@ prompt_pure_precmd() {
 
 	# Shows the full path in the title.
 	# prompt_pure_set_title 'expand-prompt' '%~'
-	prompt_pure_set_title 'expand-prompt' '%2~'
+	prompt_pure_set_title 'expand-prompt' '%(3~|.../%2~|%~)'
 
 	# Modify the colors if some have changed..
 	prompt_pure_set_colors
