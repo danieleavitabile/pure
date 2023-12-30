@@ -77,35 +77,13 @@ Most prompts are cluttered, ugly and slow. We wanted something visually pleasing
 
 ## Install
 
-Can be installed with `npm` or manually. Requires Git 2.15.2+ and ZSH 5.2+. Older versions of ZSH are known to work, but they are **not** recommended.
-
-### npm
-
-```sh
-npm install --global pure-prompt
-```
-
-That's it. Skip to [Getting started](#getting-started).
-
-### [Homebrew](https://brew.sh)
-
-```sh
-brew install pure
-```
-
-If you're not using ZSH from Homebrew (`brew install zsh` and `$(brew --prefix)/bin/zsh`), you must also add the site-functions to your `fpath` in `$HOME/.zshrc`:
-
-```sh
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
-```
-
 ### Manually
 
 1. Clone this repo somewhere. Here we'll use `$HOME/.zsh/pure`.
 
 ```sh
 mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+git clone https://github.com/danieleavitabile/pure.git "$HOME/.zsh/pure"
 ```
 
 2. Add the path of the cloned repo to `$fpath` in `$HOME/.zshrc`.
